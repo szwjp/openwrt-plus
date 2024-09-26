@@ -6,7 +6,6 @@ export BLUE_COLOR='\e[1;34m'
 export PINK_COLOR='\e[1;35m'
 export SHAN='\e[1;33;5m'
 export RES='\e[0m'
-export LAN=192.168.1.2
 GROUP=
 group() {
     endgroup
@@ -100,7 +99,7 @@ elif [ "$1" = "rc2" ]; then
 fi
 
 # lan
-[ -n "$LAN" ] && export LAN=$LAN || export LAN=10.0.0.1
+[ -n "$LAN" ] && export LAN=$LAN || export LAN=192.168.1.2
 
 # platform
 [ "$2" = "armv8" ] && export platform="armv8" toolchain_arch="aarch64_generic"
