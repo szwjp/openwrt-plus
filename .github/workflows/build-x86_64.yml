@@ -1,4 +1,3 @@
-export LAN=192.168.1.2
 name: Build x86_64
 
 on:
